@@ -1,0 +1,17 @@
+*{
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background-color: rgb(48, 48, 119);
+}
+main{
+    width: 45vw;
+}
+h1,p{
+    color: white;
+}
+p{
+    padding-top: 50px;
+}

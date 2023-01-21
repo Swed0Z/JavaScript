@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+</head>
+<body>
+    <h1>Conversor de medidas</h1>
+    <button onclick="conveter()">converter</button>
+    <div id="medidas"><h2></h2></div>
+    <script>
+        function conveter(){
+            var Medida_Metro = Number(window.prompt('Qual é a medida em metros (m)'))
+            var medidas = window.document.getElementById('medidas')
+            medidas.innerHTML= `<h1> A distância de ${Medida_Metro}metros (m) corresponde a ...`
+            medidas.innerHTML +=`<p>Quilômetro (km):${Medida_Metro / 1000}</p>`
+            medidas.innerHTML +=`<p>Hectômetro (hm):${Medida_Metro / 100}</p>` 
+            medidas.innerHTML +=`<p>Decâmetro (dam):${Medida_Metro / 10}</p>`
+            medidas.innerHTML +=`<p>Decímetro (dm):${Medida_Metro * 10}</p>`
+            medidas.innerHTML +=`<p>Centímetro (cm):${Medida_Metro * 100}</p>`
+            medidas.innerHTML +=`<p>Milímetro (mm):${Medida_Metro * 1000}</p>`
+        }
+    </script>
+</body>
+</html>

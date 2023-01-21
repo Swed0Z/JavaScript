@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcula troco</title>
+</head>
+<body>
+    <h1>calculadora de troco</h1>
+    <button onclick="calcular()">comprar produto</button>
+    <script>
+        function calcular(){
+            var NomeProduto = window.prompt('Qual é o nome do produto?')
+            var ValorProduto = Number(window.prompt(`Quanto custa ${NomeProduto}? `))
+            var ValorDado = Number(window.prompt(`Qual é o valor que você deu no ${NomeProduto}`))
+            window.alert(`Você deu ${ValorDado} em ${NomeProduto} com valor de ${ValorProduto} e o troco será de ${ValorDado - ValorProduto}`)
+        }
+    </script>
+</body>
+</html>

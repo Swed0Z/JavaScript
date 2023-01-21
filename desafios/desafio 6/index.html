@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio temperatura</title>
+</head>
+<body>
+     <h1>Conversor de temperatura</h1>
+    <button onclick="conveter()">converter</button>
+    <div id="medidas"><h2></h2></div>
+    <script>
+        function conveter(){
+            var Medida_C = Number(window.prompt('Qual é a medida de em °C '))
+            var medidas = window.document.getElementById('medidas')
+            medidas.innerHTML= `<h1> A medida que você escolheu é ${Medida_C}°C e corresponde a ...`
+            medidas.innerHTML +=`<p>grau fahrenheit(F°):${(Medida_C *9 /2)+32}°F</p>`
+            medidas.innerHTML +=`<p>Kelvin (K):${Medida_C +273 }K</p>`
+        }
+    </script>
+</body>
+</html>

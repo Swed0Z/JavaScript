@@ -9,18 +9,20 @@
 <body>
     <h1>Conversor de moedas</h1>
     <button onclick="conveter()">converter</button>
-    <div id="Cotação"><h2></h2></div>
+    <div id="Cotacao"></div>
     <script>
         function conveter(){
-            var Cotação_Dolar = Number(window.prompt('Qual é a cotação em Dolar?(US$)'))
-            var Cotação_Euro = Number(window.prompt('Qual é a cotação em Euro?(€)'))
-            var Cotação_Iene = Number(window.prompt('Qual é a cotação em Iene?(¥)'))
+            var Cotacao_Dolar = Number(window.prompt('Qual é a cotação em Dolar?(US$)'))
+            var Cotacao_Euro = Number(window.prompt('Qual é a cotação em Euro?(€)'))
+            var Cotacao_Iene = Number(window.prompt('Qual é a cotação em Iene?(¥)'))
             var Valor_Real = Number(window.prompt('Qual é o valor em Real(R$)'))
-            var medidas = window.document.getElementById('Cotação')
-            Cotação.innerHTML= `<h1> A distância de ${Medida_Metro}metros (m) corresponde a ...`
-            Cotação.innerHTML +=`<p>Dólar americano (US$):${Cotação_Dolar * Valor_Real}</p>`
-            Cotação.innerHTML +=`<p>Euro (€):${Cotação_Euro * Valor_Real}</p>` 
-            Cotação.innerHTML +=`<Iene(¥):${Cotação_Iene * Valor_Real}</p>`
+            
+            var Cotacao = window.document.getElementById('Cotacao')
+            Cotacao.innerHTML= `<h2> o valor em real convertido é ${Valor_Real}R$ e corresponde a ...`
+
+            Cotacao.innerHTML +=`<p>Dólar americano (US$):${Cotacao_Dolar * Valor_Real}</p>`
+            Cotacao.innerHTML +=`<p>Euro (€):${Cotacao_Euro * Valor_Real}</p>` 
+            Cotacao.innerHTML +=`<p>Iene (¥):${Cotacao_Iene * Valor_Real}</p>`
         }
     </script>
 </body>

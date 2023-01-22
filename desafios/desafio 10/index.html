@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Resolvendo bhaskara</h1>
+    <button onclick="Calcular()">Calcular</button> <strong></strong>
+    <p>tendo em vista que a formúla é ax²+bx+c</p>
+    <div id="calculo"><h2></h2></div>
+    <script>
+        function Calcular(){
+                var bha_a= Number(window.prompt('digite o valor de a'))
+                var bha_b = Number(window.prompt('digite o valor de b'))
+                var bha_c = Number(window.prompt('digite o valor de c'))
+                var calculo = window.document.getElementById('calculo')
+                calculo.innerHTML= `<h1>A equação é (${bha_a})x²+(${bha_b})x+(${bha_c})</h1>`
+                var delta = Number(Math.pow(bha_b,2)-4*bha_a*bha_c)
+                var x1 = Number((-bha_b+Math. sqrt(delta))/2*bha_a)
+                var x2 = Number((-bha_b-Math. sqrt(delta))/2*bha_a)
+                calculo.innerHTML +=`<p>O valor de x1 é <strong>${x1}</strong> o valor de x2 é <strong>${x2}</strong> e o valor de delta é <strong>${delta}</strong></p>`
+        }
+    </script>
 </body>
 </html>

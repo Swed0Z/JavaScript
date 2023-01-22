@@ -12,7 +12,9 @@
     <div id="medidas"><h2></h2></div>
     <script>
         function conveter(){
-            var Cotação = Number(window.prompt('Qual é a cotação em dolar?(US$)'))
+            var Cotação = Number(window.prompt('Qual é a cotação em Dolar?(US$)'))
+            var Cotação = Number(window.prompt('Qual é a cotação em Euro?(€)'))
+            var Cotação = Number(window.prompt('Qual é a cotação em Iene?(¥)'))
             var Valor_Real = Number(window.prompt('Qual é o valor em Real(R$)'))
             var medidas = window.document.getElementById('medidas')
             medidas.innerHTML= `<h1> A distância de ${Medida_Metro}metros (m) corresponde a ...`

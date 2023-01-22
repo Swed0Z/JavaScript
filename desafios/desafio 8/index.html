@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de desconto</title>
+</head>
+<body>
+    <h1>Calculadora de desconto</h1>
+    <h2>desconto de 10%</h2>
+    <button onclick="calcular()">desconto</button>
+    <div id="desconto"></div>
+    <script>
+        function calcular(){
+            var Nome_Produto = window.prompt('Digite o nome do produto.')
+            var Valor_Produto = Number(window.prompt(`digite o valor de ${Nome_Produto}`))
+            var desconto = window.document.getElementById('desconto')
+            desconto.innerHTML= `<h2>O desconto de ${Nome_Produto} com valor de ${Valor_Produto}R$ é ...</h2>`
+                desconto.innerHTML += `<p>o valor de desconto foi ${Valor_Produto/10}</p>`
+        }
+    </script>
+</body>
+</html>

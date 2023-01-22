@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reajuste salarial</h1>
+    <button onclick="reajustar()">reajustar</button>
+    <div id="aumento"><h2></h2></div>
+    <script>
+        function reajustar(){
+            var nome = window.prompt('Qual é o nome do funcionário?')
+             var salario = Number(window.prompt(`Qual é o salário de ${nome} `))
+              var aumento_salario_porcentagem = Number(window.prompt(`Qual é o aumento em % de ${nome}?`))
+
+            var aumento = window.document.getElementById('aumento')
+            var aumento_salarial_real = Number(salario * aumento_salario_porcentagem /100)
+
+            aumento.innerHTML= `<h1>${nome} recebeu aumento salárial </h1>`
+            aumento.innerHTML +=`<p>o salario era:${salario}</p>`
+            aumento.innerHTML +=`<p>o amuto salarial foi de:${aumento_salario_porcentagem}% ou ${aumento_salarial_real}</p>` 
+            aumento.innerHTML +=`<p>salario passou a ser:${salario + aumento_salarial_real}</p>`
+        }
+    </script>
+</body>
+</html>

@@ -9,15 +9,15 @@
 <body>
     <h1>Ano Bissesto</h1>
     <button onclick="Verificar()">Verificar</button>
-    <div id=" Verifica"></div>
+    <div id="mostrador"></div>
     <script>
         function Verificar(){
             var ano = Number(window.prompt('escolha o ano que será verificado'))
-            var Verifica = window.document.getElementById('Verifica')
-            if (ano % 4 == 0 ){
-                Verifica.innerHTML = `<h1>o ano de ${ano} é bissesto</h1>`
+            var Verifica = window.document.getElementById('mostrador')
+            if ((ano % 4 == 0) && (ano % 100 != 0) || (ano % 400 == 0)){
+                Verifica.innerHTML = `<h1>o ano de ${ano} <strong class="positivo">é bissesto</strong></h1>`
             } else {
-                Verifica.innerHTML = `<h1>o ano de ${ano} não é bissesto</h1>`
+                Verifica.innerHTML = `<h1>o ano de ${ano} <strong class ="negativo">não é bissesto</strong></h1>`
             }
         }
     </script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>situação do aluno</H1>
+    <button onclick="Verificar()">verificar</button>
+    <div id="situação"></div>
+    <script>
+        function Verificar(){
+            var nome = prompt("digite o nome")
+            var nota1 = Number(prompt('digite a primeira nota do aluno'))
+            var nota2 = Number(prompt('digite a segunda nota do aluno'))
+            var media = (nota1 + nota2)/2
+            var situaçao = document.getElementById('situação')
+
+            if(nota1>10 || nota2>10){
+                situaçao.innerHTML =`<h1> ola ${nome}, parece que ouve algum erro`
+                situaçao.innerHTML+='<p> alguma nota foi digitada errada, as notas vão de 0 até 10.'
+            } else if (media < 3 ) {
+                situaçao.innerHTML = `<h1>essa é a situação de ${nome}.</h1>`
+            situaçao.innerHTML += `<p>com notas ${nota1} e ${nota2} a média foi ${media}.</p>`
+                situaçao.innerHTML += '<p> o aluno foi reprovado</p>'
+            } else if(media>=3 && media<7 ) {
+                situaçao.innerHTML = `<h1>essa é a situação de ${nome}.</h1>`
+            situaçao.innerHTML += `<p>com notas ${nota1} e ${nota2} a média foi ${media}.</p>`
+                situaçao.innerHTML +='<p>o aluno está de recuperação</p>'
+            } else{
+                situaçao.innerHTML = `<h1>essa é a situação de ${nome}.</h1>`
+            situaçao.innerHTML += `<p>com notas ${nota1} e ${nota2} a média foi ${media}.</p>`
+                situaçao.innerHTML += '<p>o aluno foi aprovado</p>'
+            }
+        }
+    </script>
+</body>
+</html>

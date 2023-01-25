@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço mudou</title>
+</head>
+<body>
+    <h1>Preço mudou</h1>
+    <button onclick="muda()">preço</button>
+    <div id="mudança"></div>
+    <script>
+        function muda(){
+            var preço_ant = Number(prompt('preço anterior'))
+            var preço_atual = Number(prompt('preço atual'))
+            var mudança = document.getElementById('mudança')
+            if (preço_ant < preço_atual) {
+                mudança.innerHTML =`<h1>o preço está maior</h1>`
+            } else if( preço_ant == preço_atual) {
+                mudança.innerHTML= `<h1>o preço é o mesmo: ${preço_atual}</h1>`
+            } else {
+                mudança.innerHTML = `<h1> o preço está menor</h1>`
+            }
+            
+        }
+    </script>
+</body>
+</html>

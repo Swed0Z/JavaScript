@@ -16,11 +16,11 @@
             var preço_atual = Number(prompt('preço atual'))
             var mudança = document.getElementById('mudança')
             if (preço_ant < preço_atual) {
-                mudança.innerHTML =`<h1>o preço está maior</h1>`
+                mudança.innerHTML =`<h1>o preço está maior</h1><br><p>o preço aumentou em R$${preço_atual - preço_ant}</p>`
             } else if( preço_ant == preço_atual) {
                 mudança.innerHTML= `<h1>o preço é o mesmo: ${preço_atual}</h1>`
             } else {
-                mudança.innerHTML = `<h1> o preço está menor</h1>`
+                mudança.innerHTML = `<h1> o preço está menor</h1><br><p>o preço diminuiu em R$${preço_ant - preço_atual}`
             }
             
         }

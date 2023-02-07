@@ -12,8 +12,7 @@ header{
 section{
     background-color: white;
     margin: auto;
-    width: 40vw;
-    height: 70vh;
+    width: 600px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.61);
     
@@ -21,4 +20,8 @@ section{
 footer{
  text-align: center;
  padding-top: 15px;
+}
+#imagem{
+   width: 300px;
+   height: 300px;
 }

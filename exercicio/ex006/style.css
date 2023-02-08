@@ -3,10 +3,10 @@
     padding: 0;
 }
 body{
-    background-color: rgba(65, 107, 221, 0.89);
+    background-color: #416bdde3;
 }
 header{
-    padding-bottom: 30px;
+    padding: 30px 0 30px 0;
     text-align: center;
 }
 section{
@@ -17,11 +17,17 @@ section{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.61);
     
 }
+div{
+    padding: 15px;
+   text-align: center;
+   color:#10111e;
+}
 footer{
  text-align: center;
  padding-top: 15px;
 }
-#imagem{
+#picture{
    width: 300px;
    height: 300px;
+   border-radius: 50%;
 }

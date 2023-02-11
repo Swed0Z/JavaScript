@@ -31,3 +31,6 @@ footer{
    height: 300px;
    border-radius: 50%;
 }
+fieldset{
+    border: none;
+}

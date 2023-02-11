@@ -14,12 +14,26 @@
     <main>
         <section>
             <div id="message">
-                <label for="nome">Nome</label>
-            <input type="text" name="Nome" id="nome"><br>
-            <label for="sexo">Sexo</label>
-            <input type="radio" name="sexo" id="sexo">
-
+                <form>
+                    <fieldset>
+                      <legend>digite as informações:</legend>
+                      <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="Nome" id="nome"><br>
+                        
+                        <input type="radio" id="homem" name="sexo" value="Homem" />
+                        <label for="contactChoice2">Homem</label>
+                  
+                        <input type="radio" id="Mulher" name="sexo" value="Mulher" />
+                        <label for="Mulher">Mulher</label>
+                      </div>
+                      <div>
+                        <button type="submit">Submit</button>
+                      </div>
+                    </fieldset>
+                  </form>
             </div>
+
             <div id="photo">
                 <img id="picture" src="" alt="">
             </div>

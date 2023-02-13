@@ -11,11 +11,11 @@ function analisar(){
         var idade = ano - anoNascimento.value
         var genero = ''
     
-    if (sexo[0].checked){
-        genero = 'um homem'
-    }else if(sexo[1].checked){
-        genero = 'uma mulher'
-    }
-    resultado.innerHTML = `${nome} é ${genero} de ${idade} anos`
+        if (sexo[0].checked){
+            genero = 'um Homem'
+        }else if(sexo[1].checked){
+        genero = 'uma Mulher'
+        }
+        resultado.innerHTML =`<p>${nome} é ${genero} de ${idade} anos</p>`
 }
 }

@@ -3,10 +3,19 @@ function analisar(){
     var ano = data.getFullYear()
     var nome = document.getElementById('nome')
     var anoNascimento = document.getElementById('anoNascimento')
-    var sexo = document.getElementsByTagName('sexo')
     var resultado = document.getElementById('resultado')
-
     if (anoNascimento.value.length == 0 || anoNascimento.value > ano || nome.length == 0){
-        window.alert('alguma informação está errada')
+        alert('alguma informação está errada')
+    }else {
+        var sexo = document.getElementsByTagName('sexo')
+        var idade = ano - anoNascimento.value
+        var genero = ''
+    
+    if (sexo[0].checked){
+        genero = 'um homem'
+    }else if(sexo[1].checked){
+        genero = 'uma mulher'
     }
+    resultado.innerHTML = `${nome} é ${genero} de ${idade} anos`
+}
 }

@@ -16,6 +16,6 @@ function analisar(){
         }else if(sexo[1].checked){
         genero = 'uma Mulher'
         }
-        resultado.innerHTML =`<p>${nome} é ${genero} de ${idade} anos</p>`
+        resultado.innerHTML =`<p> ${nome.value} é ${genero} de ${idade} anos</p>`
 }
 }

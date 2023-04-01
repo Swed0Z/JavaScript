@@ -35,10 +35,10 @@ function analisar(){
         }else if(idade >=24 && idade < 55){
             img = "mulher_adulto.jpg";
         }else if(idade >=55){
-            img = "mulher_isoda.jpg";
+            img = "mulher_idosa.jpg";
         }
-        let imagemPessoa = document.getElementById('imagemPessoa');
-        imagemPessoa.src = img;
     }
+    let imagemPessoa = document.getElementById('imagemPessoa');
+    imagemPessoa.src = img;
     resultado.innerHTML = `<p>${nome.value} é ${genero} de ${idade} anos</p>`
 }

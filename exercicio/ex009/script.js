@@ -4,6 +4,8 @@ function analisar(){
     let nome = document.getElementById('nome')
     let anoNascimento = document.getElementById('anoNascimento')
     let resultado = document.getElementById('resultado')
+    
+    resultado.innerHTML = '<img id="imagemPessoa" src="sem_imagem.png" alt="imagem da pessoa">'
 
     if (nome.value.length === 0 || anoNascimento.value.length === 0 || anoNascimento.value > ano){
         alert('Alguma informação está errada')
@@ -39,5 +41,5 @@ function analisar(){
         }
     }
     document.getElementById("imagemPessoa").src = img;
-    resultado.innerHTML = `<p>${nome.value} é ${genero} de ${idade} anos</p>`
+    resultado.innerHTML += `<p>${nome.value} é ${genero} de ${idade} anos</p>`
 }

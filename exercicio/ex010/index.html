@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de Mudança de Imagem Aleatória</title>
+  </head>
+  <body>
+    <img id="imagem" src="" alt="Imagem Aleatória">
+    <br>
+    <button onclick="mudarImagem()">Mudar Imagem</button>
+    <script>
+      function mudarImagem() {
+        var imagens = [
+          "https://picsum.photos/200/300", // imagem aleatória 1
+          "https://picsum.photos/200/301", // imagem aleatória 2
+          "https://picsum.photos/200/302", // imagem aleatória 3
+          "https://picsum.photos/200/303", // imagem aleatória 4
+          "https://picsum.photos/200/304"  // imagem aleatória 5
+        ];
+        var indice = Math.floor(Math.random() * imagens.length);
+        document.getElementById("imagem").src = imagens[indice];
+      }
+    </script>
+  </body>
+</html>

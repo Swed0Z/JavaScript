@@ -13,7 +13,7 @@ function analisar(){
     let sex = document.getElementsByName('sexo')
     let idade = ano - anoNascimento.value
     let genero = ''
-    var img = document.getElementById('imagemPessoa')
+    var img = ''
     
     if (sex[0].checked){
         genero = 'um Homem'
@@ -22,7 +22,7 @@ function analisar(){
         }else if(idade >=10 && idade < 24){
             img = "homem_jovem.jpg";
         }else if(idade >=24 && idade < 55){
-            img.setAttribute('src','homem_adulto.jpg');
+            img = 'homem_adulto.jpg';
         }else if(idade >=55){
             img = "homem_idoso.jpg";
         }
@@ -38,5 +38,6 @@ function analisar(){
             img = "mulher_idosa.jpg";
         }
     }
+    document.getElementById("imagemPessoa").src = img;
     resultado.innerHTML = `<p>${nome.value} é ${genero} de ${idade} anos</p>`
 }

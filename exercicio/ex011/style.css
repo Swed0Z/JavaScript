@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 body{
     background-color: #416bdde3;
@@ -22,6 +23,9 @@ div{
    text-align: center;
    color:#10111e;
 }
+.inline {
+    display: inline;
+}    
 footer{
  text-align: center;
  padding-top: 15px;

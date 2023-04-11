@@ -7,16 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <H1>Horário</H1>
+        <H1>Vamos contar</H1>
     </header>
     <main>
         <section>
             <div id="">
+                <form method="post">
+                    <fieldset>
+                      <legend>digite as informações:</legend>
+                      <label for="inicio">inicio</label>
+                      <input type="number" id="inicio" name="inicio"><br>
+                          
+                      <label for="fim">fim</label>
+                      <input type="number" id="fim" name="fim"><br>
 
+                      <label for="passos">passos</label>
+                      <input type="number" id="passos" name="passos"><br>
+
+                      <button type="button" onclick="contador()">contar</button>
             </div>
-            <div id="">
+            <div id="resultado">
                 
             </div>
         </section>

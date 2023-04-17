@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #416bdde3;
+}
+header{
+    padding: 30px 0 30px 0;
+    text-align: center;
+}
+section{
+    background-color: white;
+    margin: auto;
+    width: 600px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.61);
+    
+}
+div{
+    padding: 15px;
+   text-align: center;
+   color:#10111e;
+}    
+footer{
+ text-align: center;
+ padding-top: 15px;
+}

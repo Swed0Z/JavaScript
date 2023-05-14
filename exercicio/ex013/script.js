@@ -36,7 +36,35 @@ const booksByCategory = [
 ];
 const totalCategoria = booksByCategory.length
 console.log(totalCategoria)
+
 for (category of booksByCategory){
-    console.log(category.category)
+    console.log('Toral de livros da categoria é:', category.category)
     console.log(category.books.length)
 }
+function countAuthor() {
+    let author = []
+    for (let category of booksByCategory) {
+        for (let book of category.books){
+            if (author.indexOf(book.author) == -1 ){
+                author.push(book.author)
+            }
+        }
+        
+    }
+    console.log("total de autores:", author.length)
+}
+countAuthor()
+
+function booksOFAuthor(author) {
+    let books = []
+    for (let category of booksByCategory) {
+        for (let book of category.books){
+            if (book.author === author ){
+                books.push(book.title)
+            }
+        }
+        
+    }
+    console.log(`livros do autor ${author} são ${books.join(", ")}`)
+}
+booksOFAuthor('Augusto Cury')

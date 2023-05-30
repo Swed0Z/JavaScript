@@ -50,3 +50,9 @@ function clean() {
   lista.innerHTML = "" ;
   resultado.innerHTML = "";
 }
+function handleKeyDown(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    addNumbers();
+  }
+}

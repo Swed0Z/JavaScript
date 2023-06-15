@@ -1,4 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.AbrirVisivel,
+.SairInvisivel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.AbrirVisivel {
+    text-align: center;
+    line-height: 50px;
+}
+
+.SairInvisivel {
+    display: none;
 }

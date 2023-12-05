@@ -7,11 +7,35 @@
 </head>
 <body>
     <nav>
-        <a href="/Home">Home</a>
-        <a href="/About">About</a>
-        <a href="/Contact">Contact</a>
-        <a href="/404">404</a>
+        <a href="/" onclick="route()">Home</a>
+        <a href="/About" onclick="route()">About</a>
+        <a href="/Contact" onclick="route()">Contact</a>
+        <a href="/404" onclick="route()">404</a>
     </nav>
     <div id="APP"></div>
+    <script>
+
+        const routes={
+            "/":"/Pages/Home.html",
+            "/About": "/Pages/About.html",
+            "/Contact": "/Pages/Contact.html",
+            "/404": "/Pages/404.html",
+        }
+
+        function route(event) {
+            event = event || window.event
+            event.preventDefault()
+
+            window.history.pushState({}, "", event.target.href)
+        }
+        function handle() {
+            const pathname = window.location.pathname
+            const route = routes[pathname] || routes[404]
+
+            fatch(route).then(data=>).then(html => {
+                window.document.querySelector(#app).inner
+            })
+        }
+    </script>
 </body>
 </html>

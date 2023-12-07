@@ -3,7 +3,7 @@ import { Router } from "./router";
  router.add("/","/Pages/Home.html")
  router.add("/About","/Pages/About.html")
  router.add("/Contact","/Pages/Contact.html")
- router.add(404,"/Pages/404.html")
+ router.add('404',"/Pages/404.html")
  
  /*const routes={
     "/":"/Pages/Home.html",
